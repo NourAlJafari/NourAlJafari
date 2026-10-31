@@ -24,12 +24,18 @@ public class ExampleJava {
             case 1:      
         int max=arr[0];
         for (int i = 1; i <arr.length; i++) {
-             max=Math.max(arr[0], arr[i]); 
-              }
-      System.out.println("max of all number : "+max);break;
-            case 2:   int minm=arr[0];
+              int max=arr[0];
         for (int i = 1; i <arr.length; i++) {
-           minm=Math.min(arr[0], arr[i]); }
+             if (max<arr[i]) {
+                max=arr[i];
+            }
+        }
+      System.out.println("max of all number : "+max);break;
+            case 2:   for (int i = 1; i <arr.length; i++) {
+           if(minm>arr[i]){
+               minm=arr[i];
+           }
+        }
              System.out.println("min of all number is : "+minm);break;
              case 3:
                  int sum=0;
