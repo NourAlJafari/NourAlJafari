@@ -22,16 +22,15 @@ public class ExampleJava {
         int c=s.nextInt();
         switch(c){
             case 1:      
-        int max=arr[0];
-        for (int i = 1; i <arr.length; i++) {
-              int max=arr[0];
+         int max=arr[0];
         for (int i = 1; i <arr.length; i++) {
              if (max<arr[i]) {
                 max=arr[i];
             }
         }
       System.out.println("max of all number : "+max);break;
-            case 2:   for (int i = 1; i <arr.length; i++) {
+            case 2:   
+                for (int i = 1; i <arr.length; i++) {
            if(minm>arr[i]){
                minm=arr[i];
            }
